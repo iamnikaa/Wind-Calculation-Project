@@ -1,0 +1,5 @@
+#ignore all environment variable files
+*.env
+
+#ignore all log files
+*.log
