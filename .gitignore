@@ -3,3 +3,6 @@
 
 #ignore all log files
 *.log
+
+#ignore python compiler files
+__pycache__/
