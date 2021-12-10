@@ -1,0 +1,406 @@
+{
+    "points": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.12574,
+                    51.50853
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "airports": [
+                    {
+                        "city": "London",
+                        "country": "United Kingdom",
+                        "distance": 12.537328108594048,
+                        "iata": "LCY",
+                        "icao": "EGLC",
+                        "lat": 51.5053,
+                        "lng": 0.055278,
+                        "name": "London City Airport"
+                    },
+                    {
+                        "city": "London",
+                        "country": "United Kingdom",
+                        "distance": 12.537328108594048,
+                        "iata": "LCY",
+                        "icao": "EGLC",
+                        "lat": 51.5053,
+                        "lng": 0.055278,
+                        "name": "London City Airport"
+                    },
+                    {
+                        "city": "Biggin Hill",
+                        "country": "United Kingdom",
+                        "distance": 22.611604588634567,
+                        "iata": "BQH",
+                        "icao": "EGKB",
+                        "lat": 51.3308,
+                        "lng": 0.0325,
+                        "name": "London Biggin Hill Airport"
+                    }
+                ],
+                "geocode": {
+                    "checked": null,
+                    "clean": null,
+                    "country": "GB",
+                    "formatted_address": null,
+                    "id": 3478804,
+                    "lang": "en",
+                    "lat": 51.50853,
+                    "lng": -0.12574,
+                    "moved": null,
+                    "name": "London",
+                    "regions": [
+                        {
+                            "id": 62149,
+                            "int": "United Kingdom",
+                            "level": 2,
+                            "name": "United Kingdom",
+                            "name_en": "United Kingdom"
+                        },
+                        {
+                            "id": 58447,
+                            "int": "England",
+                            "level": 4,
+                            "name": "England",
+                            "name_en": "England"
+                        },
+                        {
+                            "id": 175342,
+                            "int": "Greater London",
+                            "level": 5,
+                            "name": "Greater London",
+                            "name_en": "Greater London"
+                        },
+                        {
+                            "id": 65606,
+                            "int": "London",
+                            "level": 6,
+                            "name": "London",
+                            "name_en": "London"
+                        },
+                        {
+                            "id": 51781,
+                            "int": "City of Westminster",
+                            "level": 8,
+                            "name": "City of Westminster",
+                            "name_en": null
+                        }
+                    ],
+                    "typ": null,
+                    "tz": "Europe/London",
+                    "visit": 0
+                },
+                "stats": {
+                    "antipodia": [
+                        179.87426,
+                        -51.50853
+                    ],
+                    "equator": {
+                        "bearing": "S",
+                        "distance": 5729.2852018017775
+                    },
+                    "northpole": 4281.3997888621,
+                    "southpole": 15741.082488528042
+                },
+                "type": "name"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -2.23743,
+                    53.48095
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "airports": [
+                    {
+                        "city": "Manchester",
+                        "country": "United Kingdom",
+                        "distance": 14.370871459028518,
+                        "iata": "MAN",
+                        "icao": "EGCC",
+                        "lat": 53.3537,
+                        "lng": -2.27495,
+                        "name": "Manchester Airport"
+                    },
+                    {
+                        "city": "Manchester",
+                        "country": "United Kingdom",
+                        "distance": 14.370871459028518,
+                        "iata": "MAN",
+                        "icao": "EGCC",
+                        "lat": 53.3537,
+                        "lng": -2.27495,
+                        "name": "Manchester Airport"
+                    },
+                    {
+                        "city": "Liverpool",
+                        "country": "United Kingdom",
+                        "distance": 43.7821610783264,
+                        "iata": "LPL",
+                        "icao": "EGGP",
+                        "lat": 53.3336,
+                        "lng": -2.84972,
+                        "name": "Liverpool John Lennon Airport"
+                    }
+                ],
+                "geocode": {
+                    "checked": null,
+                    "clean": null,
+                    "country": "GB",
+                    "formatted_address": null,
+                    "id": 4530870,
+                    "lang": "ru",
+                    "lat": 53.48095,
+                    "lng": -2.23743,
+                    "moved": null,
+                    "name": "Manchester",
+                    "regions": [
+                        {
+                            "id": 62149,
+                            "int": "United Kingdom",
+                            "level": 2,
+                            "name": "United Kingdom",
+                            "name_en": "United Kingdom"
+                        },
+                        {
+                            "id": 58447,
+                            "int": "England",
+                            "level": 4,
+                            "name": "England",
+                            "name_en": "England"
+                        },
+                        {
+                            "id": 151261,
+                            "int": "North West England",
+                            "level": 5,
+                            "name": "North West England",
+                            "name_en": "North West England"
+                        },
+                        {
+                            "id": 88084,
+                            "int": "Greater Manchester",
+                            "level": 6,
+                            "name": "Greater Manchester",
+                            "name_en": null
+                        },
+                        {
+                            "id": 146656,
+                            "int": "Manchester",
+                            "level": 8,
+                            "name": "Manchester",
+                            "name_en": null
+                        }
+                    ],
+                    "typ": null,
+                    "tz": "Europe/London",
+                    "visit": 0
+                },
+                "stats": {
+                    "antipodia": [
+                        177.76257,
+                        -53.48095
+                    ],
+                    "equator": {
+                        "bearing": "S",
+                        "distance": 5948.677149460503
+                    },
+                    "northpole": 4062.0078412033745,
+                    "southpole": 15960.473597832644
+                },
+                "type": "name"
+            },
+            "type": "Feature"
+        }
+    ],
+    "steps": [
+        {
+            "bearing": {
+                "bearing": 327.7362530597549,
+                "exact": "NNW",
+                "rough": "N"
+            },
+            "distance": {
+                "dagrees": 2.35420337223169,
+                "flight": [
+                    {
+                        "dest": "MAN",
+                        "distance": 259.2894403793768,
+                        "start": "LCY",
+                        "time": "0h 48min"
+                    },
+                    {
+                        "dest": "MAN",
+                        "distance": 259.2894403793768,
+                        "start": "LCY",
+                        "time": "0h 48min"
+                    },
+                    {
+                        "dest": "LPL",
+                        "distance": 283.1345548134761,
+                        "start": "LCY",
+                        "time": "0h 49min"
+                    },
+                    {
+                        "dest": "MAN",
+                        "distance": 259.2894403793768,
+                        "start": "LCY",
+                        "time": "0h 48min"
+                    },
+                    {
+                        "dest": "MAN",
+                        "distance": 259.2894403793768,
+                        "start": "LCY",
+                        "time": "0h 48min"
+                    },
+                    {
+                        "dest": "LPL",
+                        "distance": 283.1345548134761,
+                        "start": "LCY",
+                        "time": "0h 49min"
+                    },
+                    {
+                        "dest": "MAN",
+                        "distance": 274.2221264171812,
+                        "start": "BQH",
+                        "time": "0h 49min"
+                    },
+                    {
+                        "dest": "MAN",
+                        "distance": 274.2221264171812,
+                        "start": "BQH",
+                        "time": "0h 49min"
+                    },
+                    {
+                        "dest": "LPL",
+                        "distance": 296.6100832503258,
+                        "start": "BQH",
+                        "time": "0h 50min"
+                    }
+                ],
+                "greatCircle": 261.7758410790766,
+                "haversine": 261.85764848188956,
+                "radians": 0.04108860010699664,
+                "vincenty": 262.1632
+            },
+            "end": [
+                -2.23743,
+                53.48095
+            ],
+            "midpoint": {
+                "geometry": {
+                    "coordinates": [
+                        -1.1578998605708164,
+                        52.499436553901226
+                    ],
+                    "type": "Point"
+                },
+                "properties": {
+                    "airports": [
+                        {
+                            "city": "Coventry",
+                            "country": "United Kingdom",
+                            "distance": 26.1631575872696,
+                            "iata": "CVT",
+                            "icao": "EGBE",
+                            "lat": 52.3697,
+                            "lng": -1.47972,
+                            "name": "Coventry Airport"
+                        },
+                        {
+                            "city": "Coventry",
+                            "country": "United Kingdom",
+                            "distance": 26.1631575872696,
+                            "iata": "CVT",
+                            "icao": "EGBE",
+                            "lat": 52.3697,
+                            "lng": -1.47972,
+                            "name": "Coventry Airport"
+                        },
+                        {
+                            "city": "East Midlands",
+                            "country": "United Kingdom",
+                            "distance": 38.63537405034089,
+                            "iata": "EMA",
+                            "icao": "EGNX",
+                            "lat": 52.8311,
+                            "lng": -1.32806,
+                            "name": "East Midlands Airport"
+                        }
+                    ],
+                    "geocode": {},
+                    "regions": [
+                        {
+                            "id": 62149,
+                            "int": "United Kingdom",
+                            "level": 2,
+                            "name": "United Kingdom",
+                            "name_en": "United Kingdom"
+                        },
+                        {
+                            "id": 58447,
+                            "int": "England",
+                            "level": 4,
+                            "name": "England",
+                            "name_en": "England"
+                        },
+                        {
+                            "id": 151279,
+                            "int": "East Midlands",
+                            "level": 5,
+                            "name": "East Midlands",
+                            "name_en": "East Midlands"
+                        },
+                        {
+                            "id": 189890,
+                            "int": "Leicestershire",
+                            "level": 6,
+                            "name": "Leicestershire",
+                            "name_en": null
+                        },
+                        {
+                            "id": 162361,
+                            "int": "Harborough",
+                            "level": 8,
+                            "name": "Harborough",
+                            "name_en": null
+                        },
+                        {
+                            "id": 6720863,
+                            "int": "Ashby Magna",
+                            "level": 10,
+                            "name": "Ashby Magna",
+                            "name_en": null
+                        }
+                    ],
+                    "stats": {
+                        "antipodia": [
+                            178.8421001394292,
+                            -52.499436553901226
+                        ],
+                        "equator": {
+                            "bearing": "S",
+                            "distance": 5839.503572538327
+                        },
+                        "northpole": 4171.1814181255495,
+                        "southpole": 15851.300638260425
+                    },
+                    "type": "latlng",
+                    "tz": "Europe/London"
+                },
+                "type": "Feature"
+            },
+            "start": [
+                -0.12574,
+                51.50853
+            ],
+            "time": 0
+        }
+    ]
+}
