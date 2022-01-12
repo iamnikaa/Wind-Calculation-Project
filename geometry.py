@@ -1,64 +1,75 @@
-"""Module to draw building geometry and get wind directions"""
+# """Module to draw building geometry and get wind directions"""
 
-#import libraries
-from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
 import sys
 
-#define window class
 class Window(QMainWindow):
+    
     def __init__(self):
         super().__init__()
-
-        #set title
-        self.setWindowTitle("Building Geometry Input")
-        #setting window geometry
-        self.setGeometry(100, 100, 800, 600)
-        #create image object for painter
-        self.image = QImage(self.size(), QImage.Format_RGB32)
-        #set image color to white
-        self.image.fill(Qt.white)
-
-        #default brush size
-        self.BRUSH_SIZE = 2
-        #brush color
-        self.BRUSH_COLOR = Qt.black
-        #flag to check if currently drawing
-        self.FLAG = False
-
-        #trace the point
-        self.last_point = QPoint()
-
-    #check mouse click
-    def mousePressEvent(self, event):
-        #left mouse button pressed
-        if event.button() == Qt.LeftButton:
-            self.FLAG = True
-            self.lastpoint = event.pos()
-
-    def mouseMoveEvent(self, event):
         
-        if (event.buttons() & Qt.LeftButton) & self.FLAG:
-            painter = QPainter(self.image)
-            painter.setPen(QPen(self.BRUSH_COLOR, self.BRUSH_SIZE, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))
-            painter.drawLine(self.last_point, event.pos())
-            self.last_point = event.pos()
-            self.update()
+        self.title = "Wind Geometry Calculation"
+        self.top= 150
+        self.left= 150
+        self.width = 700
+        self.height = 500
+        
+        self.InitWindow()
 
+    def InitWindow(self):
+
+        self.setWindowTitle(self.title)
+        self.setGeometry(self.top, self.left, self.width, self.height)
+        self.win = QWidget(self)
+        self.label = QLabel(self.win)
+        canvas = QPixmap(self.width - 200, self.height)
+        self.label.setPixmap(canvas)
+        self.setCentralWidget(self.label)
+        
+        self.show()
+        
     def paintEvent(self, event):
-        canvas_painter = QPainter(self)
-        canvas_painter.drawImage(self.rect(), self.image, self.image.rect())
+        
+        painter = QPainter(self.label.pixmap())
+        painter.begin(self)
+        painter.setRenderHint(QPainter.Antialiasing)
+        painter.setPen(Qt.red)
+        painter.setBrush(Qt.white)
 
-#Create PyQt5 app
+        painter.drawLine(100, 100, 400, 100)
+        painter.drawLine(400, 100, 400, 400)
+        painter.drawLine(400, 400, 100, 400)
+        painter.drawLine(100, 400, 100, 100)
+        
+        painter.drawText(250, 420, "4")
+        painter.drawText(250, 90, "2")
+        painter.drawText(80, 250, "1")
+        painter.drawText(410, 250, "3")
+
+        e1 = QLineEdit(self.win)
+        e1.setValidator(QIntValidator())
+        e1.setMaxLength(4)
+        
+        e1.move(self.win.mapFromParent(QPoint(250, 250)))
+        
+        painter.end()
+        
+    def mousePressEvent(self, e):
+        if e.button() == Qt.LeftButton:
+            self.setWindowTitle(str(e.pos()))
+
+    def textchanged(text):
+       print("contents of text box: " + text)
+	
+    def enterPress():
+        print("edited")
+    
+     
 App = QApplication(sys.argv)
 
-#Create an instance of window class
 window = Window()
 
-#Show Window
-window.show()
-
-#Start app
 sys.exit(App.exec())
-
+              
