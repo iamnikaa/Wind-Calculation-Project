@@ -23,11 +23,11 @@ class Window(QMainWindow):
         self.setWindowTitle(self.title)
         self.setGeometry(self.top, self.left, self.width, self.height)
         self.win = QWidget(self)
+        self.layout = QVBoxLayout(self.win)
         self.label = QLabel(self.win)
         canvas = QPixmap(self.width - 200, self.height)
         self.label.setPixmap(canvas)
-        self.setCentralWidget(self.label)
-        
+        self.setCentralWidget(self.win)
         self.show()
         
     def paintEvent(self, event):
@@ -47,12 +47,15 @@ class Window(QMainWindow):
         painter.drawText(250, 90, "2")
         painter.drawText(80, 250, "1")
         painter.drawText(410, 250, "3")
-
-        e1 = QLineEdit(self.win)
-        e1.setValidator(QIntValidator())
-        e1.setMaxLength(4)
         
-        e1.move(self.win.mapFromParent(QPoint(250, 250)))
+        painter.end()
+
+        self.e1 = QLineEdit()
+        self.e1.setValidator(QIntValidator())
+        self.e1.setMaxLength(4)
+        
+        # self.layout.addWidget(self.e1)
+        self.layout.addWidget(self.label)
         
         painter.end()
         
@@ -60,11 +63,11 @@ class Window(QMainWindow):
         if e.button() == Qt.LeftButton:
             self.setWindowTitle(str(e.pos()))
 
-    def textchanged(text):
-       print("contents of text box: " + text)
+    # def textchanged(text):
+    #    print("contents of text box: " + text)
 	
-    def enterPress():
-        print("edited")
+    # def enterPress():
+    #     print("edited")
     
      
 App = QApplication(sys.argv)
